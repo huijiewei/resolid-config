@@ -36,6 +36,9 @@ jobs:
       - name: Create Release
         id: changesets
         uses: changesets/action@v1
+        with:
+          commit: 'chore: release packages'
+          title: 'chore: release packages'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
