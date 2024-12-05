@@ -11,24 +11,42 @@
     "access": "public",
     "provenance": true
   },
-  "files": ["biome.json", "biome.react.json", "biome.tailwind.json", "tsconfig.base.json", "tsconfig.react.json"],
+  "files": ["config"],
   "exports": {
-    "./tsconfig.base": "./tsconfig.base.json",
-    "./tsconfig.react": "./tsconfig.react.json",
-    "./biome": "./biome.json",
-    "./biome.react": "./biome.react.json",
-    "./biome.tailwind": "./biome.tailwind.json"
+    "./tsconfig.base": "./config/tsconfig.base.json",
+    "./tsconfig.react": "./config/tsconfig.react.json",
+    "./biome": "./config/biome.json",
+    "./biome.react": "./config/biome.react.json",
+    "./biome.tailwind": "./config/biome.tailwind.json"
   },
   "scripts": {
-    "check": "biome check --write ."
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "lefthook install",
+    "check": "biome check --write .",
+    "check-exports": "attw --pack ."
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.17.0",
     "@biomejs/biome": "^1.9.4",
-    "typescript": "^5.6.3"
+    "@changesets/cli": "^2.27.10",
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "lefthook": "^1.8.5",
+    "typescript": "^5.7.2"
   },
+  "engines": {
+    "node": "20.x",
+    "pnpm": "9.x"
+  },
+  "packageManager": "pnpm@9.14.4",
   "homepage": "https://www.resolid.tech",
   "repository": {
     "type": "git",
     "url": "https://github.com/huijiewei/resolid-config.git"
+  },
+  "pnpm": {
+    "overrides": {
+      "safer-buffer": "npm:@nolyfill/safer-buffer@^1"
+    }
   }
 }
