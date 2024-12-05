@@ -32,11 +32,36 @@ pnpm add -D @resolid/config
 
 ### Biome 配置
 
+#### 普通配置
+
 ```json
 {
-  "$schema": "https://biomejs.dev/schemas/1.7.1/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "extends": ["@resolid/config/biome"]
 }
 ```
 
-## 致谢
+#### React 项目
+
+```json
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "extends": [
+    "@resolid/config/biome",
+    "@resolid/config/biome.react"
+  ]
+}
+```
+
+#### TailwindCSS 项目
+
+```json
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "extends": [
+    "@resolid/config/biome",
+    "@resolid/config/biome.tailwind"
+  ]
+}
+```
+
