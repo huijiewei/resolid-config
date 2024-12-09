@@ -21,17 +21,16 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "postinstall": "lefthook install",
     "check": "biome check --write .",
     "check-exports": "attw --pack ."
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "^0.17.0",
+    "@arethetypeswrong/cli": "^0.17.1",
     "@biomejs/biome": "^1.9.4",
     "@changesets/cli": "^2.27.10",
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
-    "lefthook": "^1.8.5",
+    "lefthook": "^1.9.0",
     "typescript": "^5.7.2"
   },
   "engines": {
