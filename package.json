@@ -35,8 +35,7 @@
     "typescript": "^5.7.2"
   },
   "engines": {
-    "node": "20.x",
-    "pnpm": "9.x"
+    "node": ">=20.0.0"
   },
   "packageManager": "pnpm@9.15.0",
   "homepage": "https://www.resolid.tech",
