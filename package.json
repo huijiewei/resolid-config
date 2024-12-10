@@ -1,17 +1,23 @@
 {
   "name": "@resolid/config",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "type": "module",
   "sideEffects": false,
   "description": "Resolid 通用配置",
   "author": "Huijie Wei",
   "license": "MIT",
-  "keywords": ["resolid", "biome", "typescript"],
+  "keywords": [
+    "resolid",
+    "biome",
+    "typescript"
+  ],
   "publishConfig": {
     "access": "public",
     "provenance": true
   },
-  "files": ["config"],
+  "files": [
+    "config"
+  ],
   "exports": {
     "./tsconfig.base": "./config/tsconfig.base.json",
     "./tsconfig.react": "./config/tsconfig.react.json",
