@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.0.0
+
+### Major Changes
+
+- [#16](https://github.com/huijiewei/resolid-config/pull/16) [`6300372`](https://github.com/huijiewei/resolid-config/commit/630037277926d9ce6484ac69c5bd8dadfa9315fc) Thanks [@huijiewei](https://github.com/huijiewei)! - use eslint and prettier replace biome
+
 ## 2.1.2
 
 ### Patch Changes
