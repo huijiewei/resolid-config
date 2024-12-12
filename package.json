@@ -8,7 +8,8 @@
   "license": "MIT",
   "keywords": [
     "resolid",
-    "biome",
+    "eslint",
+    "prettier",
     "typescript"
   ],
   "publishConfig": {
@@ -16,29 +17,44 @@
     "provenance": true
   },
   "files": [
-    "config"
+    "src",
+    "tsconfig"
   ],
   "exports": {
-    "./tsconfig.base": "./config/tsconfig.base.json",
-    "./tsconfig.react": "./config/tsconfig.react.json",
-    "./biome": "./config/biome.json",
-    "./biome.react": "./config/biome.react.json",
-    "./biome.tailwind": "./config/biome.tailwind.json"
+    "./*": "./src/*.js",
+    "./tsconfig.base": "./tsconfig/base.json",
+    "./tsconfig.react": "./tsconfig/react.json"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "check": "biome check --write .",
-    "check-exports": "attw --pack ."
+    "check-exports": "attw --pack . --no-definitely-typed --profile esm-only",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@eslint/js": "^9.16.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-n": "^17.15.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-compiler": "beta",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.13.0",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "typescript-eslint": "^8.18.0"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.17.1",
-    "@biomejs/biome": "^1.9.4",
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.10",
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
-    "lefthook": "^1.9.0",
-    "typescript": "^5.7.2"
+    "lefthook": "^1.9.1",
+    "prettier": "^3.4.2"
+  },
+  "peerDependencies": {
+    "eslint": "^9.16.0",
+    "prettier": "^3.4.2"
   },
   "engines": {
     "node": ">=20.0.0"
@@ -51,7 +67,23 @@
   },
   "pnpm": {
     "overrides": {
-      "safer-buffer": "npm:@nolyfill/safer-buffer@^1"
+      "safer-buffer": "npm:@nolyfill/safer-buffer@^1",
+      "array-includes": "npm:@nolyfill/array-includes@^1",
+      "array.prototype.findlast": "npm:@nolyfill/array.prototype.findlast@^1",
+      "array.prototype.flat": "npm:@nolyfill/array.prototype.flat@^1",
+      "array.prototype.flatmap": "npm:@nolyfill/array.prototype.flatmap@^1",
+      "array.prototype.tosorted": "npm:@nolyfill/array.prototype.tosorted@^1",
+      "es-iterator-helpers": "npm:@nolyfill/es-iterator-helpers@^1",
+      "hasown": "npm:@nolyfill/hasown@^1",
+      "is-core-module": "npm:@nolyfill/is-core-module@^1",
+      "object.assign": "npm:@nolyfill/object.assign@^1",
+      "object.entries": "npm:@nolyfill/object.entries@^1",
+      "object.fromentries": "npm:@nolyfill/object.fromentries@^1",
+      "object.values": "npm:@nolyfill/object.values@^1",
+      "safe-regex-test": "npm:@nolyfill/safe-regex-test@^1",
+      "string.prototype.includes": "npm:@nolyfill/string.prototype.includes@^1",
+      "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@^1",
+      "string.prototype.repeat": "npm:@nolyfill/string.prototype.repeat@^1"
     }
   }
 }

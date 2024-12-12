@@ -1,20 +1,18 @@
 # @resolid/config
 
-Resolid 通用配置, 包含了 `TypeScript`, `Biome` 的基础配置
+Resolid 通用配置, 包含了 `TypeScript`, `Eslint` 和 `Prettier` 的基础配置
 
-## 使用方法
-
-### 安装
+## 安装
 
 ```bash
 pnpm add -D @resolid/config
 ```
 
-### TypeScript 配置
+## TypeScript 配置
 
 增加下面内容到 `tsconfig.json`
 
-#### 普通项目
+### 普通项目
 
 ```json
 {
@@ -22,7 +20,7 @@ pnpm add -D @resolid/config
 }
 ```
 
-#### React 项目
+### React 项目
 
 ```json
 {
@@ -30,38 +28,65 @@ pnpm add -D @resolid/config
 }
 ```
 
-### Biome 配置
+## ESLint 配置
 
-#### 普通配置
+本配置包是纯 ESM 包, 并使用了 ESLint 扁平配置, 需要使用 `eslint.config.js` 文件来进行配置
 
-```json
-{
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "extends": ["@resolid/config/biome"]
-}
+语言选项默认为 `ecmaVersion: 2022`, `sourceType: 'module'`
+
+### 基本 Lint 配置
+
+```js
+// eslint.config.js
+import eslintBase from "@resolid/config/eslint.base";
+
+/** @type {import('eslint').Linter.FlatConfig[]} */
+export default [...eslintBase];
 ```
 
-#### React 项目
+### TypeScript Lint 配置
 
-```json
-{
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "extends": [
-    "@resolid/config/biome",
-    "@resolid/config/biome.react"
-  ]
-}
+```js
+// eslint.config.js
+import eslintTypescript from "@resolid/config/eslint.typescript";
+
+/** @type {import('eslint').Linter.FlatConfig[]} */
+export default [...eslintTypescript];
 ```
 
-#### TailwindCSS 项目
+### React Lint 配置
 
-```json
-{
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "extends": [
-    "@resolid/config/biome",
-    "@resolid/config/biome.tailwind"
-  ]
-}
+```js
+// eslint.config.js
+import eslintReact from "@resolid/config/eslint.react";
+
+/** @type {import('eslint').Linter.FlatConfig[]} */
+export default [...eslintReact];
 ```
 
+### ESLint 环境设置
+
+```js
+// eslint.config.js
+
+// 浏览器环境
+import eslintBowser from "@resolid/config/eslint.bowser";
+
+// Node 环境
+import eslintNode from "@resolid/config/eslint.node";
+
+/** @type {import('eslint').Linter.FlatConfig[]} */
+export default [...eslintBowser, ...eslintNode];
+```
+
+### ESLint 配置查看
+
+你可以进入拥有 `eslint.config.js` 文件的目录运行下面的命令来检查
+
+```bash
+npx @eslint/config-inspector@latest
+ ```
+ 
+ ## 致谢
+
+- [ESLint Config Inspector](https://github.com/eslint/config-inspector) 用于检查和理解 ESLint 平面配置的可视化工具。
