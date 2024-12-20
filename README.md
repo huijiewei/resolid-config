@@ -85,8 +85,25 @@ export default [...eslintBowser, ...eslintNode];
 
 ```bash
 npx @eslint/config-inspector@latest
- ```
- 
- ## 致谢
+```
+
+## Prettier 设置
+
+```js
+// .prettierrc.js
+
+import prettierConfig from "@resolid/config/prettier";
+
+/**
+ * @type {import("prettier").Config}
+ */
+const config = {
+  ...prettierConfig,
+};
+
+export default config;
+```
+
+## 致谢
 
 - [ESLint Config Inspector](https://github.com/eslint/config-inspector) 用于检查和理解 ESLint 平面配置的可视化工具。
