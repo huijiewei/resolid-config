@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.0.3
+
+### Patch Changes
+
+- [#22](https://github.com/huijiewei/resolid-config/pull/22) [`02c0052`](https://github.com/huijiewei/resolid-config/commit/02c0052ef99af49e9443d9a6b684cc18ca267e38) Thanks [@huijiewei](https://github.com/huijiewei)! - update dependencies
+
 ## 3.0.2
 
 ### Patch Changes
