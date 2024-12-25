@@ -49,8 +49,10 @@
     "@changesets/cli": "^2.27.11",
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
+    "eslint": "^9.17.0",
     "lefthook": "^1.10.0",
-    "prettier": "^3.4.2"
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
   },
   "peerDependencies": {
     "eslint": "^9.17.0",

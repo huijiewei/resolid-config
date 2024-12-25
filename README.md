@@ -5,7 +5,7 @@ Resolid 通用配置, 包含了 `TypeScript`, `Eslint` 和 `Prettier` 的基础�
 ## 安装
 
 ```bash
-pnpm add -D @resolid/config
+pnpm add -D @resolid/config eslint prettier
 ```
 
 ## TypeScript 配置
