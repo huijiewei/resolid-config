@@ -1,6 +1,11 @@
 {
-  "$schema": "https://unpkg.com/@changesets/config@3.0.4/schema.json",
-  "changelog": ["@changesets/changelog-github", { "repo": "huijiewei/resolid-config" }],
+  "$schema": "https://unpkg.com/@changesets/config@3.0.5/schema.json",
+  "changelog": [
+    "@changesets/changelog-github",
+    {
+      "repo": "huijiewei/resolid-config"
+    }
+  ],
   "commit": false,
   "fixed": [],
   "linked": [],
