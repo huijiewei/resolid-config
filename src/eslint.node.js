@@ -1,6 +1,7 @@
 import n from "eslint-plugin-n";
 import globals from "globals";
 
+// noinspection JSUnusedGlobalSymbols
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
   {
