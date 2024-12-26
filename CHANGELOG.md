@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.1.0
+
+### Minor Changes
+
+- [#30](https://github.com/huijiewei/resolid-config/pull/30) [`f213b44`](https://github.com/huijiewei/resolid-config/commit/f213b440d20eec20e48529c556725f4c50c4ad96) Thanks [@huijiewei](https://github.com/huijiewei)! - update tsconfig exports
+
 ## 3.0.5
 
 ### Patch Changes
