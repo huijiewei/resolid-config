@@ -16,7 +16,7 @@ pnpm add -D @resolid/config eslint prettier
 
 ```json
 {
-  "extends": "@resolid/config/tsconfig.base"
+  "extends": "@resolid/config/tsconfig/base"
 }
 ```
 
@@ -24,7 +24,7 @@ pnpm add -D @resolid/config eslint prettier
 
 ```json
 {
-  "extends": "@resolid/config/tsconfig.react"
+  "extends": "@resolid/config/tsconfig/react"
 }
 ```
 
