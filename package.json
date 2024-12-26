@@ -22,8 +22,7 @@
   ],
   "exports": {
     "./*": "./src/*.js",
-    "./tsconfig.base": "./tsconfig/base.json",
-    "./tsconfig.react": "./tsconfig/react.json"
+    "./tsconfig/*": "./tsconfig/*.json"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
