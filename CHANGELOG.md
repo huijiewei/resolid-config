@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.2.0
+
+### Minor Changes
+
+- [`d77fdf2`](https://github.com/huijiewei/resolid-config/commit/d77fdf2a4bde93e51176c76cb4c783ece39aeff8) Thanks [@huijiewei](https://github.com/huijiewei)! - remove typescript lint from react lint
+
 ## 3.1.3
 
 ### Patch Changes
