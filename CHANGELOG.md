@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.2.1
+
+### Patch Changes
+
+- [`ec5fb3f`](https://github.com/huijiewei/resolid-config/commit/ec5fb3f582b76707977a156fe62fe0e9f9130415) Thanks [@huijiewei](https://github.com/huijiewei)! - fix ignores config
+
 ## 3.2.0
 
 ### Minor Changes
