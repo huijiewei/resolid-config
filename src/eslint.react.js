@@ -3,14 +3,12 @@ import react from "eslint-plugin-react";
 import reactCompiler from "eslint-plugin-react-compiler";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
-import eslintTypescript from "./eslint.typescript.js";
 
 // noinspection JSUnusedGlobalSymbols,JSUnresolvedReference
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
-  ...eslintTypescript,
   {
-    files: ["**/*.{jsx,tsx}"],
+    files: ["**/*.jsx", "**/*.tsx"],
     plugins: {
       react: react,
       "react-refresh": reactRefresh,
@@ -27,13 +25,13 @@ export default [
             "clientAction",
             "clientLoader",
             "ErrorBoundary",
-            "handle",
             "HydrateFallback",
             "Layout",
+            "action",
+            "loader",
+            "handle",
             "links",
             "meta",
-            "loader",
-            "action",
             "shouldRevalidate",
           ],
         },
@@ -55,7 +53,7 @@ export default [
     },
   },
   {
-    files: ["**/*.{js,jsx,ts,tsx}"],
+    files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
     plugins: {
       "react-hooks": reactHooks,
       "react-compiler": reactCompiler,
@@ -72,7 +70,7 @@ export default [
     },
   },
   {
-    files: ["**/*.{jsx,tsx}"],
+    files: ["**/*.jsx", "**/*.tsx"],
     ...jsxA11y.flatConfigs.recommended,
   },
 ];

@@ -1,3 +1,3 @@
-import eslintBase from "./src/eslint.base.js";
+import eslintBase from "./src/eslint.javascript.js";
 
 export default [...eslintBase];

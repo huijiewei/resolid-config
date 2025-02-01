@@ -1,8 +1,16 @@
 import typescript from "typescript-eslint";
-import eslintBase from "./eslint.base.js";
+import javascript from "./eslint.javascript.js";
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
-export default typescript.config(...eslintBase, ...typescript.configs.recommended, {
+export default typescript.config({
+  files: ["**/*.ts", "**/*.tsx"],
+  extends: [javascript, typescript.configs.recommended],
+  languageOptions: {
+    parser: typescript.parser,
+    parserOptions: {
+      projectService: true,
+    },
+  },
   rules: {
     "@typescript-eslint/no-import-type-side-effects": "error",
     "@typescript-eslint/method-signature-style": ["error", "property"],

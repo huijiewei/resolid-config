@@ -34,14 +34,14 @@ pnpm add -D @resolid/config eslint prettier
 
 语言选项默认为 `ecmaVersion: 2022`, `sourceType: 'module'`
 
-### 基本 Lint 配置
+### Javascript Lint 配置
 
 ```js
 // eslint.config.js
-import eslintBase from "@resolid/config/eslint.base";
+import eslintJavascript from "@resolid/config/eslint.javascript";
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
-export default [...eslintBase];
+export default [...eslintJavascript];
 ```
 
 ### TypeScript Lint 配置
