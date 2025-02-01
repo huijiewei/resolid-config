@@ -5,6 +5,7 @@ import globals from "globals";
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
   {
+    name: "resolid/node",
     plugins: { n },
     rules: {
       "n/handle-callback-err": ["error", "^(err|error)$"],

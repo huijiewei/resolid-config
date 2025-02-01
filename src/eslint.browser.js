@@ -4,6 +4,7 @@ import globals from "globals";
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
   {
+    name: "resolid/browser",
     languageOptions: {
       globals: {
         ...globals.browser,

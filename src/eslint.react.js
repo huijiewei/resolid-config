@@ -8,6 +8,7 @@ import reactRefresh from "eslint-plugin-react-refresh";
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
   {
+    name: "resolid/react",
     files: ["**/*.jsx", "**/*.tsx"],
     plugins: {
       react: react,
@@ -53,6 +54,7 @@ export default [
     },
   },
   {
+    name: "resolid/react-hook",
     files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
     plugins: {
       "react-hooks": reactHooks,
@@ -70,6 +72,7 @@ export default [
     },
   },
   {
+    name: "resolid/jsx-a11y",
     files: ["**/*.jsx", "**/*.tsx"],
     ...jsxA11y.flatConfigs.recommended,
   },

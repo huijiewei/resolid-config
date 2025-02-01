@@ -2,9 +2,9 @@ import typescript from "typescript-eslint";
 import javascript from "./eslint.javascript.js";
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
-export default typescript.config({
+export default typescript.config(javascript, typescript.configs.recommended, {
+  name: "resolid/typescript",
   files: ["**/*.ts", "**/*.tsx"],
-  extends: [javascript, typescript.configs.recommended],
   languageOptions: {
     parser: typescript.parser,
     parserOptions: {
