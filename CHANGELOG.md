@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.2.2
+
+### Patch Changes
+
+- [`9480f9b`](https://github.com/huijiewei/resolid-config/commit/9480f9beb01de6496272f02f4afab21aefd8284f) Thanks [@huijiewei](https://github.com/huijiewei)! - upgrade pnpm to v10
+
 ## 3.2.1
 
 ### Patch Changes
