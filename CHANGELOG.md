@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.3.2
+
+### Patch Changes
+
+- [`b067e2a`](https://github.com/huijiewei/resolid-config/commit/b067e2a943eaf58744aac1d6eed882b32e0abdd4) Thanks [@huijiewei](https://github.com/huijiewei)! - patch eslint-plugin-react-hooks to support useEffectEvent
+
 ## 3.3.1
 
 ### Patch Changes
