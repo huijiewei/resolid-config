@@ -1,5 +1,13 @@
 # @resolid/config
 
+## 3.3.1
+
+### Patch Changes
+
+- [`d332e75`](https://github.com/huijiewei/resolid-config/commit/d332e7508ea42f110949f53337c541784e344822) Thanks [@huijiewei](https://github.com/huijiewei)! - update dependencies
+
+- [`259f194`](https://github.com/huijiewei/resolid-config/commit/259f19443dab5202a54a495352c500a9c5762e31) Thanks [@huijiewei](https://github.com/huijiewei)! - standardize ESLint and Prettier configuration files
+
 ## 3.3.0
 
 ### Minor Changes
