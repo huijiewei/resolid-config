@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.3.3
+
+### Patch Changes
+
+- [`a144895`](https://github.com/huijiewei/resolid-config/commit/a144895cccc4aca1a0b21ff6a5a7ae928e105326) Thanks [@huijiewei](https://github.com/huijiewei)! - remove eslint-plugin-react-hooks patch
+
 ## 3.3.2
 
 ### Patch Changes
