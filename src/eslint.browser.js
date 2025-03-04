@@ -1,8 +1,7 @@
 import globals from "globals";
 
-// noinspection JSUnusedGlobalSymbols
-/** @type {import('eslint').Linter.FlatConfig[]} */
-export default [
+/** @type {import('eslint').Linter.Config[]} */
+const config = [
   {
     name: "resolid/browser",
     languageOptions: {
@@ -12,3 +11,5 @@ export default [
     },
   },
 ];
+
+export default config;

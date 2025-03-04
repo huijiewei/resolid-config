@@ -1,9 +1,8 @@
 import n from "eslint-plugin-n";
 import globals from "globals";
 
-// noinspection JSUnusedGlobalSymbols
-/** @type {import('eslint').Linter.FlatConfig[]} */
-export default [
+/** @type {import('eslint').Linter.Config[]} */
+const config = [
   {
     name: "resolid/node",
     plugins: { n },
@@ -24,3 +23,5 @@ export default [
     },
   },
 ];
+
+export default config;

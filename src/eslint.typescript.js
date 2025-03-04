@@ -1,8 +1,8 @@
 import typescript from "typescript-eslint";
 import javascript from "./eslint.javascript.js";
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
-export default typescript.config(javascript, typescript.configs.recommended, {
+/** @type {import('eslint').Linter.Config[]} */
+const config = typescript.config(javascript, typescript.configs.recommended, {
   name: "resolid/typescript",
   files: ["**/*.ts", "**/*.tsx"],
   languageOptions: {
@@ -19,3 +19,5 @@ export default typescript.config(javascript, typescript.configs.recommended, {
     "@typescript-eslint/consistent-type-imports": "error",
   },
 });
+
+export default config;

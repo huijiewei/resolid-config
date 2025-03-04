@@ -4,9 +4,8 @@ import reactCompiler from "eslint-plugin-react-compiler";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 
-// noinspection JSUnusedGlobalSymbols,JSUnresolvedReference
-/** @type {import('eslint').Linter.FlatConfig[]} */
-export default [
+/** @type {import('eslint').Linter.Config[]} */
+const config = [
   {
     name: "resolid/react",
     files: ["**/*.jsx", "**/*.tsx"],
@@ -61,11 +60,11 @@ export default [
       "react-compiler": reactCompiler,
     },
     rules: {
-      ...reactHooks.configs.recommended.rules,
+      "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": [
         "warn",
         {
-          additionalHooks: "(useIsomorphicEffect)",
+          additionalHooks: "(useIsomorphicEffect|useEffectEvent)",
         },
       ],
       "react-compiler/react-compiler": "warn",
@@ -77,3 +76,5 @@ export default [
     ...jsxA11y.flatConfigs.recommended,
   },
 ];
+
+export default config;

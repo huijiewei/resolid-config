@@ -1,8 +1,8 @@
 import js from "@eslint/js";
 import globals from "globals";
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
-export default [
+/** @type {import('eslint').Linter.Config[]} */
+const config = [
   {
     name: "resolid/ignores",
     ignores: [
@@ -24,7 +24,7 @@ export default [
       "**/.resolid",
       "**/.vercel",
       "**/.yarn",
-      
+
       "**/.vite-inspect",
       "**/*.min.*",
       "**/CHANGELOG*.md",
@@ -52,3 +52,5 @@ export default [
     },
   },
 ];
+
+export default config;
