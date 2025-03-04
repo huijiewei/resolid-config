@@ -1,0 +1,80 @@
+diff --git a/cjs/eslint-plugin-react-hooks.development.js b/cjs/eslint-plugin-react-hooks.development.js
+index 128ec146542487b7f6b3d4785f0e812791e4891d..d1fc56fa0951bb42e4e2dca37ce7d4177dc3fa8f 100644
+--- a/cjs/eslint-plugin-react-hooks.development.js
++++ b/cjs/eslint-plugin-react-hooks.development.js
+@@ -157,7 +157,7 @@ function isInsideDoWhileLoop(node) {
+     return false;
+ }
+ function isUseEffectEventIdentifier$1(node) {
+-    return false;
++    return node.type === 'Identifier' && node.name === 'useEffectEvent';
+ }
+ function isUseIdentifier(node) {
+     return isReactFunction(node, 'use');
+@@ -718,7 +718,7 @@ var rule$1 = {
+                 // another useEffectEvent
+                 if (node.callee.type === 'Identifier' &&
+                     (node.callee.name === 'useEffect' ||
+-                        isUseEffectEventIdentifier$1()) &&
++                        isUseEffectEventIdentifier$1(node.callee)) &&
+                     node.arguments.length > 0) {
+                     // Denote that we have traversed into a useEffect call, and stash the CallExpr for
+                     // comparison later when we exit
+@@ -1056,7 +1056,7 @@ var rule = {
+                     // useRef() return value is stable.
+                     return true;
+                 }
+-                else if (isUseEffectEventIdentifier() &&
++                else if (isUseEffectEventIdentifier(callee) &&
+                     id.type === 'Identifier') {
+                     try {
+                         for (var _d = __values(resolved.references), _e = _d.next(); !_e.done; _e = _d.next()) {
+@@ -2676,7 +2676,7 @@ function isAncestorNodeOf(a, b) {
+         a.range[1] >= b.range[1]);
+ }
+ function isUseEffectEventIdentifier(node) {
+-    return false;
++    return node.type === 'Identifier' && node.name === 'useEffectEvent';
+ }
+ function getUnknownDependenciesMessage(reactiveHookName) {
+     return ("React Hook ".concat(reactiveHookName, " received a function whose dependencies ") +
+diff --git a/cjs/eslint-plugin-react-hooks.production.js b/cjs/eslint-plugin-react-hooks.production.js
+index f646fa15bda010d40af42d246e6be4c8e1bb4a64..fd20abfd3cd7c8e73cd7803a6aee4aa958255c99 100644
+--- a/cjs/eslint-plugin-react-hooks.production.js
++++ b/cjs/eslint-plugin-react-hooks.production.js
+@@ -153,7 +153,7 @@ function isInsideDoWhileLoop(node) {
+     return false;
+ }
+ function isUseEffectEventIdentifier$1(node) {
+-    return false;
++    return node.type === 'Identifier' && node.name === 'useEffectEvent';
+ }
+ function isUseIdentifier(node) {
+     return isReactFunction(node, 'use');
+@@ -714,7 +714,7 @@ var rule$1 = {
+                 // another useEffectEvent
+                 if (node.callee.type === 'Identifier' &&
+                     (node.callee.name === 'useEffect' ||
+-                        isUseEffectEventIdentifier$1()) &&
++                        isUseEffectEventIdentifier$1(node.callee)) &&
+                     node.arguments.length > 0) {
+                     // Denote that we have traversed into a useEffect call, and stash the CallExpr for
+                     // comparison later when we exit
+@@ -1052,7 +1052,7 @@ var rule = {
+                     // useRef() return value is stable.
+                     return true;
+                 }
+-                else if (isUseEffectEventIdentifier() &&
++                else if (isUseEffectEventIdentifier(callee) &&
+                     id.type === 'Identifier') {
+                     try {
+                         for (var _d = __values(resolved.references), _e = _d.next(); !_e.done; _e = _d.next()) {
+@@ -2672,7 +2672,7 @@ function isAncestorNodeOf(a, b) {
+         a.range[1] >= b.range[1]);
+ }
+ function isUseEffectEventIdentifier(node) {
+-    return false;
++    return node.type === 'Identifier' && node.name === 'useEffectEvent';
+ }
+ function getUnknownDependenciesMessage(reactiveHookName) {
+     return ("React Hook ".concat(reactiveHookName, " received a function whose dependencies ") +

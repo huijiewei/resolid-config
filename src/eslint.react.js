@@ -64,7 +64,7 @@ const config = [
       "react-hooks/exhaustive-deps": [
         "warn",
         {
-          additionalHooks: "(useIsomorphicEffect|useEffectEvent)",
+          additionalHooks: "(useIsomorphicEffect)",
         },
       ],
       "react-compiler/react-compiler": "warn",
