@@ -23,11 +23,6 @@ overrides:
   string.prototype.matchall: npm:@nolyfill/string.prototype.matchall@^1
   string.prototype.repeat: npm:@nolyfill/string.prototype.repeat@^1
 
-patchedDependencies:
-  eslint-plugin-react-hooks@5.2.0:
-    hash: 8a35fcd4f9b6b39a35808aec7cfc7229eabc7a7a76ca2327eaa72315418b8ac7
-    path: patches/eslint-plugin-react-hooks@5.2.0.patch
-
 importers:
 
   .:
@@ -49,7 +44,7 @@ importers:
         version: 19.0.0-beta-40c6c23-20250301(eslint@9.21.0(jiti@2.4.2))
       eslint-plugin-react-hooks:
         specifier: ^5.2.0
-        version: 5.2.0(patch_hash=8a35fcd4f9b6b39a35808aec7cfc7229eabc7a7a76ca2327eaa72315418b8ac7)(eslint@9.21.0(jiti@2.4.2))
+        version: 5.2.0(eslint@9.21.0(jiti@2.4.2))
       eslint-plugin-react-refresh:
         specifier: ^0.4.19
         version: 0.4.19(eslint@9.21.0(jiti@2.4.2))
@@ -2812,7 +2807,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-react-hooks@5.2.0(patch_hash=8a35fcd4f9b6b39a35808aec7cfc7229eabc7a7a76ca2327eaa72315418b8ac7)(eslint@9.21.0(jiti@2.4.2)):
+  eslint-plugin-react-hooks@5.2.0(eslint@9.21.0(jiti@2.4.2)):
     dependencies:
       eslint: 9.21.0(jiti@2.4.2)
 

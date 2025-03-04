@@ -94,9 +94,6 @@
     },
     "onlyBuiltDependencies": [
       "lefthook"
-    ],
-    "patchedDependencies": {
-      "eslint-plugin-react-hooks@5.2.0": "patches/eslint-plugin-react-hooks@5.2.0.patch"
-    }
+    ]
   }
 }
