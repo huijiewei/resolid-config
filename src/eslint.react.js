@@ -1,10 +1,9 @@
 import jsxA11y from "eslint-plugin-jsx-a11y";
 import react from "eslint-plugin-react";
-import reactCompiler from "eslint-plugin-react-compiler";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 
-/** @type {import('eslint').Linter.Config[]} */
+/** @type {import("eslint").Linter.Config[]} */
 const config = [
   {
     name: "resolid/react",
@@ -57,9 +56,9 @@ const config = [
     files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
     plugins: {
       "react-hooks": reactHooks,
-      "react-compiler": reactCompiler,
     },
     rules: {
+      "react-hooks/react-compiler": "error",
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": [
         "warn",
@@ -67,7 +66,6 @@ const config = [
           additionalHooks: "(useIsomorphicEffect)",
         },
       ],
-      "react-compiler/react-compiler": "warn",
     },
   },
   {

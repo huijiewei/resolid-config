@@ -31,16 +31,15 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@eslint/js": "^9.24.0",
+    "@eslint/js": "^9.25.1",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-n": "^17.17.0",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-compiler": "beta",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
+    "eslint-plugin-react-hooks": "rc",
+    "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.0.0",
     "prettier-plugin-organize-imports": "^4.1.0",
-    "typescript-eslint": "^8.30.1"
+    "typescript-eslint": "^8.31.0"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.17.4",
@@ -48,13 +47,13 @@
     "@changesets/cli": "^2.29.2",
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
-    "eslint": "^9.24.0",
-    "lefthook": "^1.11.10",
+    "eslint": "^9.25.1",
+    "lefthook": "^1.11.11",
     "prettier": "^3.5.3",
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
-    "eslint": "^9.24.0",
+    "eslint": "^9.25.1",
     "prettier": "^3.5.3",
     "typescript": "^5.8.3"
   },
@@ -66,7 +65,7 @@
   "engines": {
     "node": ">=20.0.0"
   },
-  "packageManager": "pnpm@10.8.1",
+  "packageManager": "pnpm@10.9.0",
   "homepage": "https://www.resolid.tech",
   "repository": {
     "type": "git",
