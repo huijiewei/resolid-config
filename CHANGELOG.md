@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.5.0
+
+### Minor Changes
+
+- [`98477e1`](https://github.com/huijiewei/resolid-config/commit/98477e1c50e11b06b1f3c6f78c04689766ddaf67) Thanks [@huijiewei](https://github.com/huijiewei)! - update dependencies
+
 ## 3.4.0
 
 ### Minor Changes
