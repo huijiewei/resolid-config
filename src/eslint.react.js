@@ -58,7 +58,6 @@ const config = [
       "react-hooks": reactHooks,
     },
     rules: {
-      "react-hooks/react-compiler": "error",
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": [
         "warn",
