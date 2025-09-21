@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.6.2
+
+### Patch Changes
+
+- [`33dd709`](https://github.com/huijiewei/resolid-config/commit/33dd70954ffcf051cc72e874c6013829ea7c85c6) Thanks [@huijiewei](https://github.com/huijiewei)! - add erasableSyntaxOnly option to tsconfig
+
 ## 3.6.1
 
 ### Patch Changes
