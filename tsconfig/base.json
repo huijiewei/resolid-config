@@ -12,6 +12,7 @@
     "strict": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
+    "erasableSyntaxOnly": true,
     "module": "preserve",
     "noEmit": true,
     "lib": ["es2022", "dom", "dom.iterable"]
