@@ -26,7 +26,6 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "check-exports": "attw --pack . --no-definitely-typed --profile esm-only",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
@@ -36,19 +35,18 @@
     "eslint-plugin-n": "^17.23.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "rc",
-    "eslint-plugin-react-refresh": "^0.4.20",
+    "eslint-plugin-react-refresh": "^0.4.21",
     "globals": "^16.4.0",
     "prettier-plugin-organize-imports": "^4.3.0",
-    "typescript-eslint": "^8.44.0"
+    "typescript-eslint": "^8.44.1"
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "^0.18.2",
     "@changesets/changelog-github": "^0.5.1",
     "@changesets/cli": "^2.29.7",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "eslint": "^9.36.0",
-    "lefthook": "^1.13.1",
+    "lefthook": "^1.13.2",
     "prettier": "^3.6.2",
     "typescript": "^5.9.2"
   },
@@ -65,7 +63,7 @@
   "engines": {
     "node": ">=20.0.0"
   },
-  "packageManager": "pnpm@10.17.0",
+  "packageManager": "pnpm@10.17.1",
   "homepage": "https://www.resolid.tech",
   "repository": {
     "type": "git",
