@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.6.3
+
+### Patch Changes
+
+- [`293129f`](https://github.com/huijiewei/resolid-config/commit/293129fc43a00e0dd0005b35ae2704520942df9e) Thanks [@huijiewei](https://github.com/huijiewei)! - enable noUncheckedSideEffectImports in tsconfig
+
 ## 3.6.2
 
 ### Patch Changes
