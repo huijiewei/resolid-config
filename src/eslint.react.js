@@ -61,13 +61,12 @@ const config = [
       "react-hooks": reactHooks,
     },
     rules: {
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": [
-        "warn",
-        {
-          additionalHooks: "(useIsomorphicEffect)",
-        },
-      ],
+      ...reactHooks.configs.recommended.rules,
+    },
+    settings: {
+      "react-hooks": {
+        additionalEffectHooks: "useIsomorphicEffect",
+      },
     },
   },
   {
