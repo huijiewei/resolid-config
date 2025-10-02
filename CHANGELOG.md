@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.7.1
+
+### Patch Changes
+
+- [`30ff3be`](https://github.com/huijiewei/resolid-config/commit/30ff3be4d10d572cfd7f81cc8e43f41680c1c0bf) Thanks [@huijiewei](https://github.com/huijiewei)! - switch to react-hooks/recommended
+
 ## 3.7.0
 
 ### Minor Changes
