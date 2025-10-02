@@ -23,6 +23,8 @@ const config = [
       "**/.output",
       "**/.resolid",
       "**/.vercel",
+      "**/.netlify",
+      "**/.react-router",
       "**/.yarn",
 
       "**/.vite-inspect",
