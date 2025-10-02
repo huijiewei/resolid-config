@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.7.2
+
+### Patch Changes
+
+- [`4103029`](https://github.com/huijiewei/resolid-config/commit/4103029f1e6cc0d7eafd4ef5099e6fa6f06487da) Thanks [@huijiewei](https://github.com/huijiewei)! - update eslint ignores
+
 ## 3.7.1
 
 ### Patch Changes
