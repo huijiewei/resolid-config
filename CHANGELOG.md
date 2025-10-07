@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.8.0
+
+### Minor Changes
+
+- [`20d8001`](https://github.com/huijiewei/resolid-config/commit/20d80016fcc87b6823835df23bfa152c0aa91a09) Thanks [@huijiewei](https://github.com/huijiewei)! - update node support version
+
 ## 3.7.3
 
 ### Patch Changes
