@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.9.0
+
+### Minor Changes
+
+- bump eslint-plugin-react-hooks to v7 ([`aa15a87`](https://github.com/huijiewei/resolid-config/commit/aa15a876791b2bf611ab747d07f9da1f4ce76f8a))
+
 ## 3.8.0
 
 ### Minor Changes
