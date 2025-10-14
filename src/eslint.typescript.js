@@ -1,7 +1,7 @@
 import typescript from "typescript-eslint";
 import javascript from "./eslint.javascript.js";
 
-/** @type {import('@typescript-eslint/utils').FlatConfig.ConfigArray} */
+/** @type {import('typescript-eslint').FlatConfig.ConfigArray} */
 const config = typescript.config(javascript, typescript.configs.recommended, {
   name: "resolid/typescript",
   files: ["**/*.ts", "**/*.tsx"],
