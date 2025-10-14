@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.9.1
+
+### Patch Changes
+
+- add type declarations for prettier and eslint configs ([`fc1bf50`](https://github.com/huijiewei/resolid-config/commit/fc1bf50f7f2060ae810394ca51bf30f7b1f1b29f))
+
 ## 3.9.0
 
 ### Minor Changes
