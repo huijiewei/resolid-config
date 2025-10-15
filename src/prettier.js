@@ -1,8 +1,7 @@
-import organizeImports from "prettier-plugin-organize-imports";
-
 /** @type {import('prettier').Config} */
 const config = {
-  plugins: [organizeImports],
+  plugins: [import.meta.resolve("prettier-plugin-organize-imports")],
+  organizeImportsSkipDestructiveCodeActions: true,
 };
 
 export default config;

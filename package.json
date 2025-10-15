@@ -1,25 +1,22 @@
 {
   "name": "@resolid/config",
   "version": "3.9.1",
-  "type": "module",
-  "sideEffects": false,
   "description": "Eslint and Prettier config",
-  "author": "Huijie Wei",
-  "license": "MIT",
   "keywords": [
     "resolid",
     "eslint",
     "prettier",
     "typescript"
   ],
-  "publishConfig": {
-    "access": "public",
-    "provenance": true
+  "homepage": "https://www.resolid.tech",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huijiewei/resolid-config.git"
   },
-  "files": [
-    "src",
-    "tsconfig"
-  ],
+  "license": "MIT",
+  "author": "Huijie Wei",
+  "sideEffects": false,
+  "type": "module",
   "exports": {
     "./*": {
       "types": "./src/*.d.ts",
@@ -27,9 +24,13 @@
     },
     "./tsconfig/*": "./tsconfig/*.json"
   },
+  "files": [
+    "src",
+    "tsconfig"
+  ],
   "scripts": {
-    "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier . --write --experimental-cli",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@eslint/js": "^9.37.0",
@@ -62,16 +63,18 @@
       "optional": true
     }
   },
+  "packageManager": "pnpm@10.18.3",
   "engines": {
     "node": "^20.19.0 || ^22.13.0 || >=24"
   },
-  "packageManager": "pnpm@10.18.3",
-  "homepage": "https://www.resolid.tech",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/huijiewei/resolid-config.git"
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   },
   "pnpm": {
+    "onlyBuiltDependencies": [
+      "lefthook"
+    ],
     "overrides": {
       "array-includes": "npm:@nolyfill/array-includes@^1",
       "array.prototype.findlast": "npm:@nolyfill/array.prototype.findlast@^1",
@@ -90,9 +93,6 @@
       "string.prototype.includes": "npm:@nolyfill/string.prototype.includes@^1",
       "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@^1",
       "string.prototype.repeat": "npm:@nolyfill/string.prototype.repeat@^1"
-    },
-    "onlyBuiltDependencies": [
-      "lefthook"
-    ]
+    }
   }
 }
