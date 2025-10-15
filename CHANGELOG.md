@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.10.0
+
+### Minor Changes
+
+- add eslint-plugin-erasable-syntax-only ([`6f239d6`](https://github.com/huijiewei/resolid-config/commit/6f239d6d34a49c7eb4d66dca42049426e45bb32d))
+
 ## 3.9.2
 
 ### Patch Changes
