@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.9.2
+
+### Patch Changes
+
+- update organize-imports plugin config for safer import handling ([`3fb2f5e`](https://github.com/huijiewei/resolid-config/commit/3fb2f5e330b5be231d1106fdea3a2acd656330f2))
+
 ## 3.9.1
 
 ### Patch Changes
