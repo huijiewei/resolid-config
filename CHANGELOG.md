@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.10.1
+
+### Patch Changes
+
+- chore: update react-hook lint config to recommended-latest ([`e215826`](https://github.com/huijiewei/resolid-config/commit/e21582618ea84a6b0aa29ac7149d9e2d4f13e995))
+
 ## 3.10.0
 
 ### Minor Changes
