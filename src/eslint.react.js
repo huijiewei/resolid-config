@@ -57,7 +57,7 @@ const config = [
   {
     name: "resolid/react-hook",
     files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
-    ...reactHooks.configs.flat.recommended,
+    ...reactHooks.configs.flat["recommended-latest"],
     settings: {
       "react-hooks": {
         additionalEffectHooks: "useIsomorphicEffect",
