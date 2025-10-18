@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.10.2
+
+### Patch Changes
+
+- fix: update prettier config to resolve organize-imports plugin path ([`dccac34`](https://github.com/huijiewei/resolid-config/commit/dccac3497d4ef111ed62262d46f1de4bbf7b4fee))
+
 ## 3.10.1
 
 ### Patch Changes
