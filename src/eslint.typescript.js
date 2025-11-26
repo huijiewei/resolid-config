@@ -20,5 +20,17 @@ export default defineConfig(javascript, {
     "@typescript-eslint/prefer-function-type": "error",
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        args: "all",
+        argsIgnorePattern: "^_",
+        caughtErrors: "all",
+        caughtErrorsIgnorePattern: "^_",
+        destructuredArrayIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+        ignoreRestSiblings: true,
+      },
+    ],
   },
 });
