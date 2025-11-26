@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 3.10.3
+
+### Patch Changes
+
+- feat: add @typescript-eslint/no-unused-vars options ([`6be42f4`](https://github.com/huijiewei/resolid-config/commit/6be42f403638d5e710ef2f09a40d983e4b18cb82))
+
 ## 3.10.2
 
 ### Patch Changes
