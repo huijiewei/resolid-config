@@ -42,21 +42,21 @@
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
     "prettier-plugin-organize-imports": "^4.3.0",
-    "typescript-eslint": "^8.48.0"
+    "typescript-eslint": "^8.48.1"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.29.7",
+    "@changesets/cli": "^2.29.8",
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@svitejs/changesets-changelog-github-compact": "^1.2.0",
     "eslint": "^9.39.1",
-    "lefthook": "^2.0.4",
-    "prettier": "^3.6.2",
+    "lefthook": "^2.0.5",
+    "prettier": "^3.7.4",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
     "eslint": "^9.39.1",
-    "prettier": "^3.6.2",
+    "prettier": "^3.7.4",
     "typescript": "^5.9.3"
   },
   "peerDependenciesMeta": {
@@ -64,7 +64,7 @@
       "optional": true
     }
   },
-  "packageManager": "pnpm@10.22.0",
+  "packageManager": "pnpm@10.24.0",
   "engines": {
     "node": "^20.19.0 || ^22.13.0 || >=24"
   },
