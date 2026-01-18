@@ -20,14 +20,16 @@ export default defineConfig(javascript, {
     "@typescript-eslint/prefer-function-type": "error",
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/consistent-type-imports": "error",
+    "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
-        args: "all",
+        args: "after-used",
         argsIgnorePattern: "^_",
         caughtErrors: "all",
         caughtErrorsIgnorePattern: "^_",
         destructuredArrayIgnorePattern: "^_",
+        vars: "all",
         varsIgnorePattern: "^_",
         ignoreRestSiblings: true,
       },
