@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 4.0.1
+
+### Patch Changes
+
+- fix: export tsconfig json files to support extends resolution ([`29c4648`](https://github.com/huijiewei/resolid-config/commit/29c4648af7f01040017b1b1b74e5696edcd16f2c))
+
 ## 4.0.0
 
 ### Major Changes
