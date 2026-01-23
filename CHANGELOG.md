@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 4.0.0
+
+### Major Changes
+
+- remove tsconfig exports, require explicit .json extension for tsconfig extends ([`e2f6ec4`](https://github.com/huijiewei/resolid-config/commit/e2f6ec48a9f0f86a4a94920ef15f6c166dec6e08))
+
 ## 3.10.4
 
 ### Patch Changes
