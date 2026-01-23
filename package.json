@@ -21,7 +21,8 @@
     "./*": {
       "types": "./src/*.d.ts",
       "import": "./src/*.js"
-    }
+    },
+    "./tsconfig/*.json": "./tsconfig/*.json"
   },
   "files": [
     "src",
