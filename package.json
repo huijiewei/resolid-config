@@ -1,6 +1,6 @@
 {
   "name": "@resolid/config",
-  "version": "3.10.4",
+  "version": "4.0.0",
   "description": "Eslint and Prettier config",
   "keywords": [
     "resolid",
