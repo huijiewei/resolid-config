@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 5.0.0
+
+### Major Changes
+
+- feat: merge eslint to oxlint ([`386c333`](https://github.com/huijiewei/resolid-config/commit/386c333f0ebc61c9d4509bf1aa2dc44ae0510442))
+
 ## 4.0.1
 
 ### Patch Changes
