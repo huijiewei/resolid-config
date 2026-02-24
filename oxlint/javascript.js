@@ -1,14 +1,11 @@
 import { defineConfig } from "oxlint";
 
 export default defineConfig({
-  categories: {
-    correctness: "warn",
-  },
+  categories: { correctness: "error", perf: "warn", style: "warn", suspicious: "warn" },
   env: {
     builtin: true,
     es2022: true,
   },
-  plugins: ["eslint", "import"],
   ignorePatterns: [
     "**/build",
     "**/coverage",
@@ -20,4 +17,28 @@ export default defineConfig({
     "**/.vercel",
     "**/.vite-inspect",
   ],
+  plugins: ["eslint", "import"],
+  rules: {
+    "capitalized-comments": "off",
+    "func-style": "off",
+    "id-length": "off",
+    "import/consistent-type-specifier-style": "off",
+    "import/exports-last": "off",
+    "import/group-exports": "off",
+    "import/no-anonymous-default-export": "off",
+    "import/no-named-export": "off",
+    "import/no-nodejs-modules": "off",
+    "import/prefer-default-export": "off",
+    "init-declarations": "off",
+    "max-params": ["warn", { max: 10 }],
+    "max-statements": "off",
+    "new-cap": "off",
+    "no-continue": "off",
+    "no-implicit-coercion": "off",
+    "no-magic-numbers": "off",
+    "no-nested-ternary": "off",
+    "no-ternary": "off",
+    "sort-imports": "off",
+    "sort-keys": "off",
+  },
 });
