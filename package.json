@@ -1,62 +1,55 @@
 {
   "name": "@resolid/config",
   "version": "4.0.1",
-  "description": "Eslint and Prettier config",
+  "description": "Oxlint and Typescript config",
   "keywords": [
+    "oxfmt",
+    "oxlint",
     "resolid",
-    "eslint",
-    "prettier",
     "typescript"
   ],
   "homepage": "https://www.resolid.tech",
+  "license": "MIT",
+  "author": "Huijie Wei",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/huijiewei/resolid-config.git"
   },
-  "license": "MIT",
-  "author": "Huijie Wei",
-  "sideEffects": false,
+  "files": [
+    "oxlint",
+    "tsconfig"
+  ],
   "type": "module",
+  "sideEffects": false,
   "exports": {
-    "./*": {
-      "types": "./src/*.d.ts",
-      "import": "./src/*.js"
+    "./oxlint/*": {
+      "types": "./oxlint/*.d.ts",
+      "import": "./oxlint/*.js"
     },
     "./tsconfig/*.json": "./tsconfig/*.json"
   },
-  "files": [
-    "src",
-    "tsconfig"
-  ],
-  "scripts": {
-    "format": "prettier . --write",
-    "lint": "eslint ."
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   },
-  "dependencies": {
-    "@eslint/js": "^9.39.2",
-    "eslint-plugin-erasable-syntax-only": "^0.4.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-n": "^17.23.2",
-    "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.4.26",
-    "globals": "^16.5.0",
-    "prettier-plugin-organize-imports": "^4.3.0",
-    "typescript-eslint": "^8.53.1"
+  "scripts": {
+    "format": "oxfmt",
+    "lint": "oxlint"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.8",
-    "@commitlint/cli": "^20.3.1",
-    "@commitlint/config-conventional": "^20.3.1",
+    "@commitlint/cli": "^20.4.2",
+    "@commitlint/config-conventional": "^20.4.2",
     "@svitejs/changesets-changelog-github-compact": "^1.2.0",
-    "eslint": "^9.39.2",
-    "lefthook": "^2.0.15",
-    "prettier": "^3.8.1",
+    "lefthook": "^2.1.1",
+    "oxfmt": "^0.35.0",
+    "oxlint": "^1.50.0",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "eslint": "^9.39.1",
-    "prettier": "^3.7.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-you-might-not-need-an-effect": "^0.9.1",
+    "oxlint": "^1.50.0",
     "typescript": "^5.9.3"
   },
   "peerDependenciesMeta": {
@@ -64,14 +57,10 @@
       "optional": true
     }
   },
-  "packageManager": "pnpm@10.28.1",
   "engines": {
     "node": "^20.19.0 || ^22.13.0 || >=24"
   },
-  "publishConfig": {
-    "access": "public",
-    "provenance": true
-  },
+  "packageManager": "pnpm@10.30.2",
   "pnpm": {
     "onlyBuiltDependencies": [
       "lefthook"

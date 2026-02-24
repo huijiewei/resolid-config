@@ -3,10 +3,10 @@ pre-commit:
   commands:
     lint:
       glob: "*.{js,ts,jsx,tsx}"
-      run: npx --no eslint --fix {staged_files}
+      run: npx --no oxlint --fix {staged_files}
     format:
       glob: "*.{js,jsx,ts,tsx,json}"
-      run: npx --no prettier --write {staged_files}
+      run: npx --no oxfmt {staged_files}
 
 commit-msg:
   parallel: true
