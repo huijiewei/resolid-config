@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 5.0.1
+
+### Patch Changes
+
+- feat: update oxlint default config ([`0d662c7`](https://github.com/huijiewei/resolid-config/commit/0d662c733ee8a8e42189bd5fd467e2cc60c6f453))
+
 ## 5.0.0
 
 ### Major Changes
