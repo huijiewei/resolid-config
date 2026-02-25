@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 5.0.2
+
+### Patch Changes
+
+- feat: update configuration files and improve linting rules ([`aa501b6`](https://github.com/huijiewei/resolid-config/commit/aa501b693b211d098606439bc13cc3ec57c90a88))
+
 ## 5.0.1
 
 ### Patch Changes
