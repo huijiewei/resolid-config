@@ -18,5 +18,7 @@ export default defineConfig({
     "typescript/prefer-function-type": "error",
     "typescript/prefer-nullish-coalescing": "error",
     "typescript/prefer-optional-chain": "error",
+
+    "typescript/array-type": "warn",
   },
 });
