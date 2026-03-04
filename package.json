@@ -37,19 +37,19 @@
     "lint": "oxlint"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.29.8",
-    "@commitlint/cli": "^20.4.2",
-    "@commitlint/config-conventional": "^20.4.2",
+    "@changesets/cli": "^2.30.0",
+    "@commitlint/cli": "^20.4.3",
+    "@commitlint/config-conventional": "^20.4.3",
     "@svitejs/changesets-changelog-github-compact": "^1.2.0",
-    "lefthook": "^2.1.1",
-    "oxfmt": "^0.35.0",
-    "oxlint": "^1.50.0",
+    "lefthook": "^2.1.2",
+    "oxfmt": "^0.36.0",
+    "oxlint": "^1.51.0",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
     "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-you-might-not-need-an-effect": "^0.9.1",
-    "oxlint": "^1.50.0",
+    "eslint-plugin-react-you-might-not-need-an-effect": "^0.9.2",
+    "oxlint": "^1.51.0",
     "typescript": "^5.9.3"
   },
   "peerDependenciesMeta": {
@@ -58,9 +58,9 @@
     }
   },
   "engines": {
-    "node": "^20.19.0 || ^22.13.0 || >=24"
+    "node": "^22.13.0 || >=24"
   },
-  "packageManager": "pnpm@10.30.2",
+  "packageManager": "pnpm@10.30.3",
   "pnpm": {
     "onlyBuiltDependencies": [
       "lefthook"
