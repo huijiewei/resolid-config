@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 5.0.3
+
+### Patch Changes
+
+- feat: update rules ([`ec38b50`](https://github.com/huijiewei/resolid-config/commit/ec38b502b3fac5adfab3ddbc4835a8d6deea2da5))
+
 ## 5.0.2
 
 ### Patch Changes
