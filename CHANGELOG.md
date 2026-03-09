@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 5.1.0
+
+### Minor Changes
+
+- docs: update readme ([`c918d49`](https://github.com/huijiewei/resolid-config/commit/c918d492dfc5e0df1fc4f1e9fb5b2810c414d9ff))
+
 ## 5.0.3
 
 ### Patch Changes
