@@ -1,11 +1,11 @@
 # @resolid/config
 
-Resolid 通用配置, 包含了 `TypeScript`, `Eslint` 和 `Prettier` 的基础配置
+Resolid 通用配置, 包含了 `TypeScript`, `Oxlint` 的基础配置
 
 ## 安装
 
 ```bash
-pnpm add -D @resolid/config eslint prettier typescript
+pnpm add -D @resolid/config oxlint typescript
 ```
 
 ## TypeScript 配置
@@ -28,82 +28,61 @@ pnpm add -D @resolid/config eslint prettier typescript
 }
 ```
 
-## ESLint 配置
-
-本配置包是纯 ESM 包, 并使用了 ESLint 扁平配置, 需要使用 `eslint.config.js` 文件来进行配置
-
-语言选项默认为 `ecmaVersion: 2022`, `sourceType: 'module'`
+## Oxlint 配置
 
 ### Javascript Lint 配置
 
 ```js
-// eslint.config.js
-import eslintJavascript from "@resolid/config/eslint.javascript";
+// oxlint.config.ts
+import javascriptConfig from "@resolid/config/oxlint/javascript";
+import { defineConfig } from "oxlint";
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
-export default [...eslintJavascript];
+export default defineConfig({
+  extends: [javascriptConfig],
+});
 ```
 
 ### TypeScript Lint 配置
 
 ```js
-// eslint.config.js
-import eslintTypescript from "@resolid/config/eslint.typescript";
+// oxlint.config.ts
+import typescriptConfig from "@resolid/config/oxlint/typescript";
+import { defineConfig } from "oxlint";
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
-export default [...eslintTypescript];
+export default defineConfig({
+  extends: [typescriptConfig],
+});
 ```
 
 ### React Lint 配置
 
-```js
-// eslint.config.js
-import eslintReact from "@resolid/config/eslint.react";
+由于 Oxlint 配置解析器的限制，目前你必须直接安装所需的 JS 插件
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
-export default [...eslintReact];
+```shell
+pnpm add -D eslint-plugin-react-hooks eslint-plugin-react-you-might-not-need-an-effect
 ```
 
-### ESLint 环境设置
+```js
+// oxlint.config.ts
+import reactConfig from "@resolid/config/oxlint/react";
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  extends: [reactConfig],
+});
+```
+
+### 环境 Lint 设置
 
 ```js
-// eslint.config.js
-
+// oxlint.config.ts
 // 浏览器环境
-import eslintBowser from "@resolid/config/eslint.bowser";
-
+import browserConfig from "@resolid/config/oxlint/browser";
 // Node 环境
-import eslintNode from "@resolid/config/eslint.node";
+import nodeConfig from "@resolid/config/oxlint/node";
+import { defineConfig } from "oxlint";
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
-export default [...eslintBowser, ...eslintNode];
+export default defineConfig({
+  extends: [browserConfig, nodeConfig],
+});
 ```
-
-### ESLint 配置查看
-
-你可以进入拥有 `eslint.config.js` 文件的目录运行下面的命令来检查
-
-```bash
-npx @eslint/config-inspector@latest
-```
-
-## Prettier 设置
-
-```js
-// .prettierrc.js
-
-import prettierConfig from "@resolid/config/prettier";
-
-/**
- * @type {import("prettier").Config}
- */
-const config = {
-  ...prettierConfig,
-};
-
-export default config;
-```
-
-## 致谢
-
-- [ESLint Config Inspector](https://github.com/eslint/config-inspector) 用于检查和理解 ESLint 平面配置的可视化工具。
