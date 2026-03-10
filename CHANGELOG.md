@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 5.1.1
+
+### Patch Changes
+
+- feat: add unicorn plugin and some pref rules ([`fbc85fb`](https://github.com/huijiewei/resolid-config/commit/fbc85fbc96c7d4cd31297127f82784e2be5d00af))
+
 ## 5.1.0
 
 ### Minor Changes
