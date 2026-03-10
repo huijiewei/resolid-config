@@ -19,8 +19,11 @@ export default defineConfig({
     "**/.vercel",
     "**/.vite-inspect",
   ],
-  plugins: ["eslint", "oxc", "import"],
+  plugins: ["eslint", "import", "oxc", "promise", "unicorn"],
   rules: {
+    curly: "warn",
+    "guard-for-in": "warn",
+
     "no-case-declarations": "error",
     "no-empty": "error",
     "no-fallthrough": "error",
@@ -29,22 +32,25 @@ export default defineConfig({
     "no-unexpected-multiline": "error",
     "no-var": "error",
     "no-array-constructor": "error",
+    "no-useless-call": "error",
+    "no-await-in-loop": "error",
+
     "prefer-const": "error",
     "prefer-rest-params": "error",
     "prefer-spread": "error",
-
     "prefer-template": "warn",
     "prefer-destructuring": "warn",
     "prefer-object-spread": "warn",
     "prefer-exponentiation-operator": "warn",
     "prefer-numeric-literals": "warn",
-    curly: "warn",
-    "guard-for-in": "warn",
 
     "import/export": "error",
     "import/named": "error",
     "import/no-named-as-default": "warn",
     "import/no-named-as-default-member": "warn",
     "import/no-duplicates": "warn",
+
+    "oxc/no-accumulating-spread": "error",
+    "oxc/no-map-spread": "error",
   },
 });

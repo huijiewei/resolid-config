@@ -5,8 +5,10 @@ export default defineConfig({
   extends: [javascriptConfig],
   plugins: ["typescript"],
   rules: {
+    "typescript/array-type": "warn",
     "typescript/ban-ts-comment": "error",
     "typescript/consistent-type-imports": "error",
+
     "typescript/no-empty-object-type": "error",
     "typescript/no-explicit-any": "error",
     "typescript/no-import-type-side-effects": "error",
@@ -14,11 +16,10 @@ export default defineConfig({
     "typescript/no-require-imports": "error",
     "typescript/no-unnecessary-type-constraint": "error",
     "typescript/no-unsafe-function-type": "error",
+
     "typescript/prefer-for-of": "error",
     "typescript/prefer-function-type": "error",
     "typescript/prefer-nullish-coalescing": "error",
     "typescript/prefer-optional-chain": "error",
-
-    "typescript/array-type": "warn",
   },
 });

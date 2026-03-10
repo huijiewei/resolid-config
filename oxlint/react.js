@@ -11,7 +11,7 @@ export default defineConfig({
       specifier: "eslint-plugin-react-you-might-not-need-an-effect",
     },
   ],
-  plugins: ["react", "jsx-a11y"],
+  plugins: ["react", "react-perf", "jsx-a11y"],
   rules: {
     "react/display-name": "error",
     "react/jsx-key": "error",
