@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 5.2.2
+
+### Patch Changes
+
+- feat: update oxfmt sortImports config ([`9157da8`](https://github.com/resolid/config/commit/9157da8c9cbf92b3871348d7d435591053468678))
+
 ## 5.2.1
 
 ### Patch Changes
