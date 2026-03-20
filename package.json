@@ -16,6 +16,7 @@
     "url": "git+https://github.com/resolid/config.git"
   },
   "files": [
+    "oxfmt",
     "oxlint",
     "tsconfig"
   ],
