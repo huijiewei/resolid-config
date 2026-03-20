@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 5.2.1
+
+### Patch Changes
+
+- fix: add oxfmt to package files ([`789a52f`](https://github.com/resolid/config/commit/789a52f37b162a32ba3ae318a7c70b3cf4c772fd))
+
 ## 5.2.0
 
 ### Minor Changes
