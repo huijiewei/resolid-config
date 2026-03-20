@@ -18,6 +18,8 @@ export function oxfmtConfig(config) {
         ["type-parent", "type-sibling", "type-index"],
         ["value-parent", "value-sibling", "value-index"],
         { newlinesBetween: true },
+        "style",
+        { newlinesBetween: true },
         "unknown",
       ],
       ...sortImports,
