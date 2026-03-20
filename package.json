@@ -1,6 +1,6 @@
 {
   "name": "@resolid/config",
-  "version": "5.2.0",
+  "version": "5.2.1",
   "description": "Oxlint and Typescript config",
   "keywords": [
     "oxfmt",
