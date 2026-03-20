@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 5.2.0
+
+### Minor Changes
+
+- feat: add oxfmtConfig helper for extending oxfmt configuration ([`292b534`](https://github.com/huijiewei/resolid-config/commit/292b5342e3d57da1a3514f66adab0af39b84a1d6))
+
 ## 5.1.1
 
 ### Patch Changes
