@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 5.3.0
+
+### Minor Changes
+
+- feat: upgrade to typescript 6 ([`0e463b5`](https://github.com/resolid/config/commit/0e463b53e30b751f045278f756384d0fb51f19ed))
+
 ## 5.2.2
 
 ### Patch Changes
