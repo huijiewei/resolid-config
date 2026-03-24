@@ -2,5 +2,6 @@
   "editor.defaultFormatter": "oxc.oxc-vscode",
   "eslint.enable": false,
   "prettier.enable": false,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "oxc.typeAware": true
 }

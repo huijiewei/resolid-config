@@ -20,6 +20,14 @@ pnpm add -D @resolid/config oxlint typescript
 }
 ```
 
+### Node 项目
+
+```json
+{
+  "extends": "@resolid/config/tsconfig/node.json"
+}
+```
+
 ### React 项目
 
 ```json
@@ -34,8 +42,8 @@ pnpm add -D @resolid/config oxlint typescript
 
 ```js
 // oxlint.config.ts
-import javascriptConfig from "@resolid/config/oxlint/javascript";
 import { defineConfig } from "oxlint";
+import javascriptConfig from "@resolid/config/oxlint/javascript";
 
 export default defineConfig({
   extends: [javascriptConfig],
@@ -46,8 +54,8 @@ export default defineConfig({
 
 ```js
 // oxlint.config.ts
-import typescriptConfig from "@resolid/config/oxlint/typescript";
 import { defineConfig } from "oxlint";
+import typescriptConfig from "@resolid/config/oxlint/typescript";
 
 export default defineConfig({
   extends: [typescriptConfig],
@@ -64,8 +72,8 @@ pnpm add -D eslint-plugin-react-hooks eslint-plugin-react-you-might-not-need-an-
 
 ```js
 // oxlint.config.ts
-import reactConfig from "@resolid/config/oxlint/react";
 import { defineConfig } from "oxlint";
+import reactConfig from "@resolid/config/oxlint/react";
 
 export default defineConfig({
   extends: [reactConfig],
@@ -76,13 +84,21 @@ export default defineConfig({
 
 ```js
 // oxlint.config.ts
+import { defineConfig } from "oxlint";
 // 浏览器环境
 import browserConfig from "@resolid/config/oxlint/browser";
 // Node 环境
 import nodeConfig from "@resolid/config/oxlint/node";
-import { defineConfig } from "oxlint";
 
 export default defineConfig({
   extends: [browserConfig, nodeConfig],
 });
+```
+
+## Oxfmt 配置
+
+```js
+import { oxfmtConfig } from "@resolid/config/oxfmt";
+
+export default oxfmtConfig({});
 ```
