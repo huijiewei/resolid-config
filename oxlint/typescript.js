@@ -11,7 +11,7 @@ export default defineConfig({
     "typescript/ban-ts-comment": "error",
     "typescript/class-literal-property-style": "warn",
     "typescript/dot-notation": "error",
-    "typescript/consistent-generic-constructors": "warn",
+    "typescript/consistent-generic-constructors": ["warn", "type-annotation"],
     "typescript/consistent-indexed-object-style": ["warn", "record"],
     "typescript/consistent-type-assertions": [
       "warn",

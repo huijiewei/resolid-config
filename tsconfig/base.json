@@ -1,15 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "module": "esnext",
+    "module": "preserve",
     "moduleResolution": "bundler",
     "moduleDetection": "force",
-    "noEmit": true,
 
     "target": "es2022",
-
     "isolatedModules": true,
     "erasableSyntaxOnly": true,
+    "noEmit": true,
 
     "allowJs": true,
     "skipLibCheck": true,
