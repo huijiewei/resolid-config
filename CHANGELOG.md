@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 5.3.1
+
+### Patch Changes
+
+- fix: resolve tsconfig and lint rule conflicts ([`bd0ab28`](https://github.com/resolid/config/commit/bd0ab28b482df5041208f675ebcae36d1726899e))
+
 ## 5.3.0
 
 ### Minor Changes
