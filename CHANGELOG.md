@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 5.3.2
+
+### Patch Changes
+
+- feat: add lib tsconfig and update lint config ([`4518117`](https://github.com/resolid/config/commit/45181172588b14644edbb6d8ac7958417006bc5b))
+
 ## 5.3.1
 
 ### Patch Changes
