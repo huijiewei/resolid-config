@@ -19,7 +19,6 @@ export default defineConfig({
         assertionStyle: "as",
       },
     ],
-    "typescript/consistent-type-definitions": ["warn", "type"],
     "typescript/consistent-type-exports": [
       "warn",
       {

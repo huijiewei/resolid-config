@@ -3,5 +3,6 @@
   "eslint.enable": false,
   "prettier.enable": false,
   "editor.formatOnSave": true,
-  "oxc.typeAware": true
+  "oxc.typeAware": true,
+  "js/ts.tsdk.path": "node_modules/typescript/lib"
 }

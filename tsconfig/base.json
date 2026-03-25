@@ -4,11 +4,15 @@
     "module": "preserve",
     "moduleResolution": "bundler",
     "moduleDetection": "force",
+    "noEmit": true,
 
     "target": "es2022",
     "isolatedModules": true,
     "erasableSyntaxOnly": true,
-    "noEmit": true,
+
+    "strict": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
 
     "allowJs": true,
     "skipLibCheck": true,

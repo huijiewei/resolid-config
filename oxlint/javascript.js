@@ -34,6 +34,7 @@ export default defineConfig({
     "no-array-constructor": "error",
     "no-useless-call": "error",
     "no-await-in-loop": "error",
+    "no-template-curly-in-string": "error",
 
     "prefer-const": "error",
     "prefer-rest-params": "error",
