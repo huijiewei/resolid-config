@@ -1,6 +1,6 @@
-import { defineConfig } from "oxlint";
-import javascriptConfig from "./oxlint/javascript.js";
+import { defineConfig, type OxlintConfig } from "oxlint";
+import typescriptConfig from "./oxlint/typescript.js";
 
 export default defineConfig({
-  extends: [javascriptConfig],
-});
+  extends: [typescriptConfig],
+}) as OxlintConfig;

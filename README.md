@@ -5,7 +5,7 @@ Resolid 通用配置, 包含了 `TypeScript`, `Oxlint` 的基础配置
 ## 安装
 
 ```bash
-pnpm add -D @resolid/config oxlint typescript
+pnpm add -D @resolid/config oxlint oxfmt oxlint-tsgolint typescript
 ```
 
 ## TypeScript 配置
@@ -33,6 +33,14 @@ pnpm add -D @resolid/config oxlint typescript
 ```json
 {
   "extends": "@resolid/config/tsconfig/react.json"
+}
+```
+
+### 库项目 (extends 多个项目类型,库项目需放在最后)
+
+```json
+{
+  "extends": "@resolid/config/tsconfig/lib.json"
 }
 ```
 
