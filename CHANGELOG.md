@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 5.3.4
+
+### Patch Changes
+
+- chore: add react and react-dom types ([`14422eb`](https://github.com/resolid/config/commit/14422ebc7c13be55b5c8044429408c199b1c37d3))
+
 ## 5.3.3
 
 ### Patch Changes
