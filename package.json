@@ -50,16 +50,16 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-you-might-not-need-an-effect": "^0.9.3",
     "lefthook": "^2.1.5",
-    "oxfmt": "^0.44.0",
-    "oxlint": "^1.59.0",
+    "oxfmt": "^0.45.0",
+    "oxlint": "^1.60.0",
     "oxlint-tsgolint": "^0.20.0",
     "typescript": "^6.0.2"
   },
   "peerDependencies": {
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-you-might-not-need-an-effect": "^0.9.3",
-    "oxfmt": "^0.44.0",
-    "oxlint": "^1.59.0",
+    "oxfmt": "^0.45.0",
+    "oxlint": "^1.60.0",
     "oxlint-tsgolint": "^0.20.0",
     "typescript": "^6.0.2"
   },
