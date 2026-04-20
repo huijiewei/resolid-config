@@ -22,14 +22,11 @@ export default defineConfig({
     "react/no-unsafe": "off",
     "react/react-in-jsx-scope": "off",
     "react/require-render-return": "error",
-    "react/rules-of-hooks": "error",
     "react/self-closing-comp": "error",
     "react/jsx-boolean-value": "error",
     "react/jsx-pascal-case": "error",
     "react/jsx-curly-brace-presence": "warn",
     "react/jsx-no-useless-fragment": "warn",
-
-    "react/exhaustive-deps": ["warn", { additionalHooks: "useIsomorphicEffect" }],
     "react/only-export-components": [
       "warn",
       {
@@ -53,23 +50,25 @@ export default defineConfig({
       },
     ],
 
+    "react/rules-of-hooks": "error",
+    "react/exhaustive-deps": ["warn", { additionalHooks: "useIsomorphicEffect" }],
+
     // react-hooks-js Recommended
-    "react-hooks-js/static-components": "error",
-    "react-hooks-js/use-memo": "error",
-    "react-hooks-js/void-use-memo": "error",
-    "react-hooks-js/component-hook-factories": "error",
-    "react-hooks-js/preserve-manual-memoization": "error",
-    "react-hooks-js/incompatible-library": "error",
-    "react-hooks-js/immutability": "error",
+    "react-hooks-js/config": "error",
+    "react-hooks-js/error-boundaries": "error",
+    "react-hooks-js/gating": "error",
     "react-hooks-js/globals": "error",
+    "react-hooks-js/immutability": "error",
+    "react-hooks-js/preserve-manual-memoization": "error",
+    "react-hooks-js/purity": "error",
     "react-hooks-js/refs": "error",
     "react-hooks-js/set-state-in-effect": "error",
-    "react-hooks-js/error-boundaries": "error",
-    "react-hooks-js/purity": "error",
     "react-hooks-js/set-state-in-render": "error",
+    "react-hooks-js/static-components": "error",
     "react-hooks-js/unsupported-syntax": "error",
-    "react-hooks-js/config": "error",
-    "react-hooks-js/gating": "error",
+    "react-hooks-js/use-memo": "error",
+    "react-hooks-js/void-use-memo": "error",
+    "react-hooks-js/incompatible-library": "error",
 
     // react-you-might-not-need-an-effect-js Recommended
     "react-you-might-not-need-an-effect-js/no-empty-effect": "warn",

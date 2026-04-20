@@ -43,25 +43,25 @@
     "changeset": "changeset"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.30.0",
+    "@changesets/cli": "^2.31.0",
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
     "@svitejs/changesets-changelog-github-compact": "^1.2.0",
-    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-you-might-not-need-an-effect": "^0.9.3",
-    "lefthook": "^2.1.5",
+    "lefthook": "^2.1.6",
     "oxfmt": "^0.45.0",
     "oxlint": "^1.60.0",
-    "oxlint-tsgolint": "^0.20.0",
-    "typescript": "^6.0.2"
+    "oxlint-tsgolint": "^0.21.1",
+    "typescript": "^6.0.3"
   },
   "peerDependencies": {
-    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-you-might-not-need-an-effect": "^0.9.3",
     "oxfmt": "^0.45.0",
     "oxlint": "^1.60.0",
-    "oxlint-tsgolint": "^0.20.0",
-    "typescript": "^6.0.2"
+    "oxlint-tsgolint": "^0.21.1",
+    "typescript": "^6.0.3"
   },
   "peerDependenciesMeta": {
     "typescript": {
