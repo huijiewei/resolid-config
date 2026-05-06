@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 5.3.14
+
+### Patch Changes
+
+- fix: remove react-you-might-not-need-an-effect-js/no-empty-effect rule ([`fc0b426`](https://github.com/resolid/config/commit/fc0b426e7a544d79869cde1bb74b656579bbd6bb))
+
 ## 5.3.13
 
 ### Patch Changes
