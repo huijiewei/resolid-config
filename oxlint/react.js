@@ -71,7 +71,6 @@ export default defineConfig({
     "react-hooks-js/incompatible-library": "error",
 
     // react-you-might-not-need-an-effect-js Recommended
-    "react-you-might-not-need-an-effect-js/no-empty-effect": "warn",
     "react-you-might-not-need-an-effect-js/no-adjust-state-on-prop-change": "warn",
     "react-you-might-not-need-an-effect-js/no-reset-all-state-on-prop-change": "warn",
     "react-you-might-not-need-an-effect-js/no-event-handler": "warn",
