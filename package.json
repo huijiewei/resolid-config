@@ -49,18 +49,18 @@
     "@svitejs/changesets-changelog-github-compact": "^1.2.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-you-might-not-need-an-effect": "^0.10.1",
-    "lefthook": "^2.1.6",
-    "oxfmt": "^0.50.0",
-    "oxlint": "^1.65.0",
-    "oxlint-tsgolint": "^0.22.1",
+    "lefthook": "^2.1.8",
+    "oxfmt": "^0.51.0",
+    "oxlint": "^1.66.0",
+    "oxlint-tsgolint": "^0.23.0",
     "typescript": "^6.0.3"
   },
   "peerDependencies": {
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-you-might-not-need-an-effect": "^0.10.1",
-    "oxfmt": "^0.50.0",
-    "oxlint": "^1.65.0",
-    "oxlint-tsgolint": "^0.22.1",
+    "oxfmt": "^0.51.0",
+    "oxlint": "^1.66.0",
+    "oxlint-tsgolint": "^0.23.0",
     "typescript": "^6.0.3"
   },
   "peerDependenciesMeta": {
@@ -80,5 +80,5 @@
   "engines": {
     "node": "^22.13.0 || >=24"
   },
-  "packageManager": "pnpm@11.1.2"
+  "packageManager": "pnpm@11.1.3"
 }
