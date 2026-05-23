@@ -40,6 +40,6 @@ jobs:
         with:
           title: "chore: release package(s)"
           commit: "chore: release package(s)"
-          publish: pnpm publish -r
+          publish: pnpm changeset publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
