@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 5.3.19
+
+### Patch Changes
+
+- chore: change release workflow ([`2ddb4d8`](https://github.com/resolid/config/commit/2ddb4d83f5860b678f0b17f70ae7a77fb2a4ba27))
+
 ## 5.3.18
 
 ### Patch Changes
