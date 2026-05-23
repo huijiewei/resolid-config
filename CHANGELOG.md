@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 5.3.20
+
+### Patch Changes
+
+- chore: update package.json ([`18853af`](https://github.com/resolid/config/commit/18853afe9fec60dcea3eb59cf3a6bd971d45f6c8))
+
 ## 5.3.19
 
 ### Patch Changes
