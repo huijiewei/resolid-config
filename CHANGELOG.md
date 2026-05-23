@@ -1,5 +1,11 @@
 # @resolid/config
 
+## 5.3.18
+
+### Patch Changes
+
+- chore: update dependencies ([`d346c82`](https://github.com/resolid/config/commit/d346c826019aa8b0f0b0fb04250a33b96713eaeb))
+
 ## 5.3.17
 
 ### Patch Changes
