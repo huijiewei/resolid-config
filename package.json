@@ -39,7 +39,8 @@
   },
   "scripts": {
     "format": "oxfmt",
-    "lint": "oxlint"
+    "lint": "oxlint",
+    "changeset": "changeset"
   },
   "devDependencies": {
     "@changesets/cli": "^2.31.0",
@@ -74,12 +75,6 @@
     },
     "eslint-plugin-react-you-might-not-need-an-effect": {
       "optional": true
-    }
-  },
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "11.2.2"
     }
   },
   "engines": {
