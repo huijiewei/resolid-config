@@ -3,13 +3,13 @@ pre-commit:
   commands:
     lint:
       glob: "*.{js,ts,jsx,tsx}"
-      run: npx --no oxlint --fix {staged_files}
+      run: pnpm exec oxlint --fix {staged_files}
     format:
       glob: "*.{js,jsx,ts,tsx,json}"
-      run: npx --no oxfmt {staged_files}
+      run: pnpm exec oxfmt {staged_files}
 
 commit-msg:
   parallel: true
   commands:
     commitlint:
-      run: npx --no -- commitlint --edit {1}
+      run: pnpm exec -- commitlint --edit {1}
